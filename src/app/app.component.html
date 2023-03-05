@@ -1,0 +1,24 @@
+<div class="form-wrapper">
+  <ng-container [formGroup]="userForm">
+
+    <form [formGroup]="userForm">
+    <mat-card class="form-container">
+      <mat-card-header>
+        <mat-card-title>Basic Info</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <app-basic-property-info></app-basic-property-info>
+        <app-basic-property-address></app-basic-property-address>
+        <app-property-profile-info></app-property-profile-info>
+        </mat-card-content>
+        
+      </mat-card>
+    </form>
+
+    <p>{{userForm.value | json}}</p>
+    <!-- <mat-card class="form-container" formGroupName="address">
+
+    </mat-card> -->
+
+  </ng-container>
+</div>
