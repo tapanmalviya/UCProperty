@@ -23,13 +23,27 @@ export class BasicPropertyInfoComponent {
     {value:'childRadioButtonControl',viewValue:'Commercial'},
     {value:'childRadioButtonControl',viewValue:'Agriculture'},
   ];
-  parentRadioButtonControls3:any[] = [
-    {value:'subChildRadioButtonControl',viewValue:'Flat/Apartment'},
-    {value:'subChildRadioButtonControl',viewValue:'Service Apartment'},
-    {value:'subChildRadioButtonControl',viewValue:'Studio Apartment'},
-    {value:'subChildRadioButtonControl',viewValue:'Independent House/Villa'},
-    {value:'subChildRadioButtonControl',viewValue:'Penthouse/Builder Floor'},
-    {value:'subChildRadioButtonControl',viewValue:'Land/Plot'},
+  parentRadioButtonControlsResidential:any[] = [
+    {value:'subChildRadioButtonControlResidential',viewValue:'Flat/Apartment'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Service Apartment'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Studio Apartment'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Independent House/Villa'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Penthouse/Builder Floor'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Land/Plot'},
+  ];
+  
+  parentRadioButtonControlsCommercial:any[] = [
+    {value:'subChildRadioButtonControlResidential',viewValue:'Office'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Retail'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Land'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Storage'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Industry'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Hospitality'}
+  ];
+  
+  parentRadioButtonControlsAgriculture:any[] = [
+    {value:'subChildRadioButtonControlResidential',viewValue:'Farmhouse/Farmhouse Land'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Agriculture Land'}
   ];
 ngOnInit(): void{
   this.formBasicInfo = this.rootFormGroup.control;

@@ -7,10 +7,10 @@ import { FormGroup, FormGroupDirective } from '@angular/forms';
   styleUrls: ['./property-profile-info.component.scss']
 })
 export class PropertyProfileInfoComponent {
-  formProfileInfo!: FormGroup;
-constructor(private rootFormGroup: FormGroupDirective){
-}
-ngOnInit(): void{
-  this.formProfileInfo = this.rootFormGroup.control;
-}
+//   formProfileInfo!: FormGroup;
+// constructor(private rootFormGroup: FormGroupDirective){
+// }
+// ngOnInit(): void{
+//   this.formProfileInfo = this.rootFormGroup.control;
+// }
 }

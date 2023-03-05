@@ -5,3 +5,28 @@
     </mat-radio-group>
     </div>
 </ng-container> -->
+
+<ng-container [formGroup]="formLocationInfo">  
+    <div formGroupName="address">
+    <mat-form-field>  
+      <label>City</label>
+    <input matInput formControlName="city" placeholder="City">
+  </mat-form-field>
+    <mat-form-field>  
+      <label>Project (Optional)</label>
+    <input matInput formControlName="project" placeholder="Project (Optional)">
+  </mat-form-field>
+    <mat-form-field>  
+      <label>Locality</label>
+    <input matInput formControlName="locality" placeholder="Locality">
+  </mat-form-field>
+    <mat-form-field>  
+      <label>Sub Locality (Optional)</label>
+    <input matInput formControlName="subLocality" placeholder="Sub Locality (Optional)">
+  </mat-form-field>
+    <mat-form-field>  
+      <label>Address</label>
+    <input matInput formControlName="address" placeholder="Address">
+  </mat-form-field>
+</div>
+</ng-container>

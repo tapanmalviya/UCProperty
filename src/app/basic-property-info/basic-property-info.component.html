@@ -18,8 +18,24 @@
 
 <ng-container [formGroup]="formBasicInfoSubChildRadio">
   <div formGroupName="parentRadioControls">
-    <mat-radio-group aria-labelledby="example-radio-group-label" formControlName="subChildRadioButtonControl">
-      <mat-radio-button *ngFor="let firstRadioGroup of parentRadioButtonControls3"  class="example-radio-button" name="{{firstRadioGroup.value}}" value="{{firstRadioGroup.viewValue}}">{{firstRadioGroup.viewValue}}</mat-radio-button>
+    <mat-radio-group aria-labelledby="example-radio-group-label" formControlName="subChildRadioButtonControlResidential">
+      <mat-radio-button *ngFor="let firstRadioGroup of parentRadioButtonControlsResidential"  class="example-radio-button" name="{{firstRadioGroup.value}}" value="{{firstRadioGroup.viewValue}}">{{firstRadioGroup.viewValue}}</mat-radio-button>
+    </mat-radio-group>
+    </div>
+</ng-container>
+
+<ng-container [formGroup]="formBasicInfoSubChildRadio">
+  <div formGroupName="parentRadioControls">
+    <mat-radio-group aria-labelledby="example-radio-group-label" formControlName="subChildRadioButtonControlResidential">
+      <mat-radio-button *ngFor="let firstRadioGroup of parentRadioButtonControlsCommercial"  class="example-radio-button" name="{{firstRadioGroup.value}}" value="{{firstRadioGroup.viewValue}}">{{firstRadioGroup.viewValue}}</mat-radio-button>
+    </mat-radio-group>
+    </div>
+</ng-container>
+
+<ng-container [formGroup]="formBasicInfoSubChildRadio">
+  <div formGroupName="parentRadioControls">
+    <mat-radio-group aria-labelledby="example-radio-group-label" formControlName="subChildRadioButtonControlResidential">
+      <mat-radio-button *ngFor="let firstRadioGroup of parentRadioButtonControlsAgriculture"  class="example-radio-button" name="{{firstRadioGroup.value}}" value="{{firstRadioGroup.viewValue}}">{{firstRadioGroup.viewValue}}</mat-radio-button>
     </mat-radio-group>
     </div>
 </ng-container>

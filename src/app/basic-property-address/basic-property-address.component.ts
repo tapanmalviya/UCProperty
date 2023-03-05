@@ -7,6 +7,12 @@ import { FormGroup, FormGroupDirective } from '@angular/forms';
   styleUrls: ['./basic-property-address.component.scss']
 })
 export class BasicPropertyAddressComponent {
+  formLocationInfo!: FormGroup;
+  constructor(private rootFormGroup: FormGroupDirective){
+  }
+  ngOnInit(): void{
+    this.formLocationInfo = this.rootFormGroup.control;
+  }
 //   formAddressInfo!: FormGroup;
 
 //   parentRadioButtonControls2:any[] = [

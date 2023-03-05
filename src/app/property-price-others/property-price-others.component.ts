@@ -11,13 +11,13 @@ export class PropertyPriceOthersComponent {
 
   constructor(private rootFormGroup: FormGroupDirective){}
 
-  parentRadioButtonControls3:any[] = [
-    {value:'subChildRadioButtonControl',viewValue:'Flat/Apartment'},
-    {value:'subChildRadioButtonControl',viewValue:'Service Apartment'},
-    {value:'subChildRadioButtonControl',viewValue:'Studio Apartment'},
-    {value:'subChildRadioButtonControl',viewValue:'Independent House/Villa'},
-    {value:'subChildRadioButtonControl',viewValue:'Penthouse/Builder Floor'},
-    {value:'subChildRadioButtonControl',viewValue:'Land/Plot'},
+  parentRadioButtonControlsResidential:any[] = [
+    {value:'subChildRadioButtonControlResidential',viewValue:'Flat/Apartment'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Service Apartment'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Studio Apartment'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Independent House/Villa'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Penthouse/Builder Floor'},
+    {value:'subChildRadioButtonControlResidential',viewValue:'Land/Plot'},
   ];
   ngOnInit(): void{
     this.formPriceOther = this.rootFormGroup.control;

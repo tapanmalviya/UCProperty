@@ -13,16 +13,6 @@ export class AppComponent {
   propertyModelObj:parentDataModel=new parentDataModel;
   showAllData:any;
 
-
-  parentRadioButtonControls3:any[] = [
-    {value:'subChildRadioButtonControl',viewValue:'Flat/Apartment'},
-    {value:'subChildRadioButtonControl',viewValue:'Service Apartment'},
-    {value:'subChildRadioButtonControl',viewValue:'Studio Apartment'},
-    {value:'subChildRadioButtonControl',viewValue:'Independent House/Villa'},
-    {value:'subChildRadioButtonControl',viewValue:'Penthouse/Builder Floor'},
-    {value:'subChildRadioButtonControl',viewValue:'Land/Plot'},
-  ];
-
   constructor(private fb:FormBuilder){}
 
   ngOnInit(): void {    
@@ -30,13 +20,14 @@ export class AppComponent {
       parentRadioControls: this.fb.group({
         parentRadioButtonControl: ['', ''],
         childRadioButtonControl: ['', ''],
-        subChildRadioButtonControl: ['', ''],
+        subChildRadioButtonControlResidential: ['', ''],
     }),
       address: this.fb.group({
-        street: ['', ''],
         city: ['', ''],
-        state: ['', ''],
-        zip: ['', '']
+        project: ['', ''],
+        locality: ['', ''],
+        subLocality: ['', ''],
+        address: ['', '']
       }),
       formProfileInfo: this.fb.group({
         noOfBedRooms: ['', ''],
